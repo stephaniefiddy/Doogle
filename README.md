@@ -1,24 +1,19 @@
-# README
+# Doogle
+Doogle is a dictionary based search engine. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Check it out [here](). 
 
-Things you may want to cover:
+## Database Design
+Doogle's database layer is comprised of two tables with a *one-to-many association* since a 
+word can have multiple definitions. 
 
-* Ruby version
+![Database Design](/app/assets/images/documentation/database_design.png)
 
-* System dependencies
 
-* Configuration
+----
 
-* Database creation
+### Important to note
+* `factory_bot_rails` was used instead of `FactoryGirl` given the fact that the latter is deprecated for Rails 5+
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Useful Resources used
+* [Nokogiri Cheat Sheet](https://github.com/sparklemotion/nokogiri/wiki/Cheat-sheet)
